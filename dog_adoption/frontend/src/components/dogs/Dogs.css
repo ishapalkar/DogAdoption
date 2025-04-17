@@ -1,0 +1,240 @@
+/* Completing the dog-actions .btn styling that was cut off */
+.dog-actions .btn {
+  flex: 1;
+  margin: 0 5px;
+}
+
+.dog-actions .btn:first-child {
+  margin-left: 0;
+}
+
+.dog-actions .btn:last-child {
+  margin-right: 0;
+}
+
+.add-dog-btn {
+  display: block;
+  margin: 0 auto 30px;
+  max-width: 200px;
+  text-align: center;
+}
+
+/* Dog Form Styles */
+.dog-form-container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dog-form-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #3498db;
+}
+
+.dog-form-container .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: vertical;
+}
+
+.dog-form-container .form-group.checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.dog-form-container .form-group.checkbox input {
+  width: auto;
+  margin-right: 10px;
+}
+
+.dog-form-container .form-group.checkbox label {
+  margin-bottom: 0;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.form-actions .btn {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.form-actions .btn:first-child {
+  margin-left: 0;
+}
+
+.form-actions .btn:last-child {
+  margin-right: 0;
+}
+
+/* Dog List Styles */
+.dog-list-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.dog-list-container h2 {
+  text-align: center;
+  color: #3498db;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.dog-list-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.filter-controls {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.filter-btn {
+  padding: 0.6rem 1.2rem;
+  border: 2px solid #3498db;
+  background: transparent;
+  color: #3498db;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  background: #3498db15;
+}
+
+.filter-btn.active {
+  background: #3498db;
+  color: white;
+}
+
+.dog-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.no-dogs {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 3rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.no-dogs p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.dog-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid #eee;
+}
+
+.dog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.dog-card h3 {
+  color: #3498db;
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 0.5rem;
+}
+
+.dog-card p {
+  margin: 0.5rem 0;
+  color: #555;
+  line-height: 1.6;
+}
+
+.dog-card .status {
+  margin-top: auto;
+  padding: 0.5rem 0;
+  font-weight: 500;
+}
+
+.dog-card.adopted {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+}
+
+.dog-card.adopted .status {
+  color: #2ecc71;
+}
+
+.dog-actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.dog-actions .btn {
+  padding: 0.6rem;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  text-align: center;
+  width: 100%;
+}
+
+.add-dog-btn {
+  background: #3498db;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0 auto 3rem;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.add-dog-btn:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+}
+
+/* Loading state */
+.loading {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+  font-size: 1.2rem;
+}
